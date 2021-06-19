@@ -1,0 +1,1 @@
+# Desvio_padrao_e_Variancia

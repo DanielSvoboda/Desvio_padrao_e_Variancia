@@ -159,5 +159,11 @@ namespace desvio_padrao
                 aMEDIANA.Text = (vetor_ordenado[metade]).ToString();
             }
         }
+
+
+        private void linkLabel_github_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/DanielSvoboda");
+        }
     }
 }

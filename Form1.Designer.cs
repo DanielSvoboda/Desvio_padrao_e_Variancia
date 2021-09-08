@@ -54,6 +54,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.NUMEROS_ORDENADO = new System.Windows.Forms.TextBox();
             this.label_titulo = new System.Windows.Forms.Label();
+            this.label_sobre1 = new System.Windows.Forms.Label();
+            this.linkLabel_github = new System.Windows.Forms.LinkLabel();
             this.group_CALCULOS.SuspendLayout();
             this.group_DESVIO.SuspendLayout();
             this.group_VARIÂNCIA.SuspendLayout();
@@ -179,7 +181,7 @@
             this.group_CALCULOS.Size = new System.Drawing.Size(167, 105);
             this.group_CALCULOS.TabIndex = 11;
             this.group_CALCULOS.TabStop = false;
-            this.group_CALCULOS.Text = "CALCULOS";
+            this.group_CALCULOS.Text = "CÁLCULOS";
             this.group_CALCULOS.UseWaitCursor = true;
             // 
             // label_MEDIANA
@@ -328,11 +330,33 @@
             this.label_titulo.Text = "ESCREVA OS NÚMEROS, SEPARANDO COM ALGUNS DESSES CARACTERES:   \'   \'     \' , \'    " +
     " \' : \'    \' ; \'    \' . \'";
             // 
+            // label_sobre1
+            // 
+            this.label_sobre1.AutoSize = true;
+            this.label_sobre1.Location = new System.Drawing.Point(441, 601);
+            this.label_sobre1.Name = "label_sobre1";
+            this.label_sobre1.Size = new System.Drawing.Size(137, 13);
+            this.label_sobre1.TabIndex = 15;
+            this.label_sobre1.Text = "Criado por: Daniel Svoboda\r\n";
+            // 
+            // linkLabel_github
+            // 
+            this.linkLabel_github.AutoSize = true;
+            this.linkLabel_github.Location = new System.Drawing.Point(584, 601);
+            this.linkLabel_github.Name = "linkLabel_github";
+            this.linkLabel_github.Size = new System.Drawing.Size(173, 13);
+            this.linkLabel_github.TabIndex = 16;
+            this.linkLabel_github.TabStop = true;
+            this.linkLabel_github.Text = "https://github.com/DanielSvoboda";
+            this.linkLabel_github.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_github_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 610);
+            this.ClientSize = new System.Drawing.Size(774, 617);
+            this.Controls.Add(this.linkLabel_github);
+            this.Controls.Add(this.label_sobre1);
             this.Controls.Add(this.label_titulo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NUMEROS_ORDENADO);
@@ -390,6 +414,8 @@
         private System.Windows.Forms.Label label_MEDIANA;
         private System.Windows.Forms.Label aMEDIANA;
         private System.Windows.Forms.Label label_titulo;
+        private System.Windows.Forms.Label label_sobre1;
+        private System.Windows.Forms.LinkLabel linkLabel_github;
     }
 }
 
